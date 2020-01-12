@@ -1,23 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import Quiz from "./quizSplit";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className = "Quiz-question-heading">Start:</h1>
+        <Quiz/>
+      {/* <div className="Quiz-btn-div">
+      <button className="Quiz-btn">Quiz 1</button>
+      </div>
+
+      <div className="Quiz-btn-div">
+        <button className="Quiz-btn">Quiz 2</button>
+      </div> */}
       </header>
     </div>
   );
